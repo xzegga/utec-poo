@@ -17,8 +17,8 @@ public class SumaResta {
 		add = num1 + num2;
 		substract = num1 - num2;
 
-		System.out.printf("The sum of the first and second numbers is %.2f \n"
-			+ " and The subtraction of the first number minus the second is %.2f", add, substract);
+		System.out.printf("The sum of the first and second numbers is %.2f and \n"
+			+ "The subtraction of the first number minus the second is %.2f", add, substract);
 		
 	}
 }

@@ -26,11 +26,13 @@ public class ExampleInput {
 		weightKg = weight * kgFactor;
 
 		// Outputs: Welcome message
+
 		/*
 		System.out.println(
 			"Welcome " + name 
 			+ ", your age is " + age 
 			+ " and your weight is " + String.format("%.2f", weightKg) + " kg"
+
 		);
 		*/
 
