@@ -38,7 +38,7 @@ public class Producto {
 		return codigo;
 	}
 	
-	public String setCodigo(String codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
