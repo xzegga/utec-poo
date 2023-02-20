@@ -1,19 +1,20 @@
 public class Producto {
 	// Atributos de clase Producto
-	private String nombre;
-	private String descripcion;
-	private double precio;
 	private String codigo;
+	private String nombre;
+	private String descripcion;	
 	private String categoria;
+	private double precio;
 
-	// Getter y Setters para nombre
-	public String getNombre() {
-		return nombre;
-	}
 	
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+        // Getter y Setters para nombre
+        public String getNombre() {
+                return nombre;
+        }
+        
+        public void setNombre(String nombre) {
+                this.nombre = nombre;
+        }
 
 	// Setters and Getters para descripcion
 	public String getDescripcion() { 
