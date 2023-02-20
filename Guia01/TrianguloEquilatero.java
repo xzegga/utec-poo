@@ -1,18 +1,22 @@
+import java.util.Scanner;
+
 public class TrianguloEquilatero {
-    private double lado;
+	public static void main(String args[]){
+		double lado, area;
 
-    public TrianguloEquilatero(double lado) {
-        this.lado = lado;
-    }
+		// Objeto Scanner para entrada de datos del usuario
+		Scanner scanner = new Scanner(System.in);
 
-    public double calcularArea() {
-        return Math.sqrt(3) / 4 * Math.pow(lado, 2);
-    }
+		System.out.println("CALCULO DEL AREA DE UN TRIANGULO EQUILATERO");
 
-    public static void main(String[] args) {
-        double lado = 5.0; // Valor del lado del triángulo
-        TrianguloEquilatero triangulo = new TrianguloEquilatero(lado);
-        double area = triangulo.calcularArea();
-        System.out.println("El área del triángulo equilátero de lado " + lado + " es " + area);
-    }
+		System.out.println("Ingrese la medida de uno de los lados del triángulo");
+		lado = scanner.nextDouble();
+
+		// Proceso de cálculo del área
+
+		    area = (double)Math.sqrt(3) / 4 * Math.pow(lado, 2);
+	
+		// Salida
+		System.out.println("El área del triángulo equilátero de lado " + lado + " es " + area);
+	}
 }
