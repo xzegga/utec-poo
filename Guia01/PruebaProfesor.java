@@ -1,17 +1,50 @@
 import java.util.Scanner;
 
-public class PruebaPersona {
-	public static void main(String args[]) {
-		Persona persona1 = new Persona();		
-		Scanner scanner = new Scanner(System.in);
+public class PruebaProfesor {
+        public static void main(String args[]) {
+		// Declaración de variables para almacenar inputs del usuario
+                String nombre, apellidos, carrera, escalafon;
+                int edad;
 
-		System.out.println("\n SOLICITUD DE DATOS \n");
-		System.out.println("Ingrese el número de DUI:");
-		
-		persona1.dui = scanner.nextLine();
-		
-		System.out.println("\nLOS DATOS DE LA PERSONA AGREGADA SON");
-		System.out.println("No. DUI: " + persona1.dui);
-	}
+		// Definición de objeto Producto
+                Profesor profesor1 = new Profesor();
 
+		// Definición de objeto scanner;
+                Scanner scanner = new Scanner(System.in);
+
+		// Lectura de datos
+                System.out.println("\nINGRESO DE NUEVO PROFESOR");
+                System.out.println("SOLICITUD DE DATOS \n");
+                
+                System.out.println("Nombre del Profesor:");
+                nombre = scanner.nextLine();
+                profesor1.setNombre(nombre);
+
+                System.out.println("Apellidos del Profesor:");
+                apellidos = scanner.nextLine();
+                profesor1.setApellidos(apellidos);
+		  
+                System.out.println("Edad del profesor:");
+                edad = scanner.nextInt();
+                profesor1.setEdad(edad);
+		scanner.nextLine();
+
+		System.out.println("Carrera del profesor:");
+		carrera = scanner.nextLine();
+		profesor1.setCarrera(carrera);
+
+                System.out.println("Escalafón del profesor:");
+                escalafon = scanner.nextLine();
+                profesor1.setEscalafon(escalafon);
+
+                // Mostrando información del producto
+                System.out.println("\n==================================");
+                System.out.println("LOS DATOS DE LA PRODUCTO AGREGADO SON");
+                System.out.println("Nombre:\t\t" + profesor1.getNombre());
+                System.out.println("Apellidos:\t" + profesor1.getApellidos());
+                System.out.println("Edad:\t\t" + profesor1.getEdad());
+                System.out.println("Carrera:\t" + profesor1.getCarrera());
+                System.out.println("Escalafón:\t" + "$" +  profesor1.getEscalafon());
+        }
 }
+
