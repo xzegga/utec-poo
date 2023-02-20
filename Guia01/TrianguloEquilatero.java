@@ -13,8 +13,7 @@ public class TrianguloEquilatero {
 		lado = scanner.nextDouble();
 
 		// Proceso de cálculo del área
-
-		    area = (double)Math.sqrt(3) / 4 * Math.pow(lado, 2);
+		area = (double)Math.sqrt(3) / 4 * Math.pow(lado, 2);
 	
 		// Salida
 		System.out.println("El área del triángulo equilátero de lado " + lado + " es " + area);
