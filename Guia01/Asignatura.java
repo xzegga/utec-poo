@@ -2,8 +2,8 @@ public class Asignatura
 {
  	public String nombre;
 	public String seccion;
-	public int estudiantess;
+	public int maxEstudiantes;
 	public int aula;
-	public int hora;
+	public String hora;
 }
  
