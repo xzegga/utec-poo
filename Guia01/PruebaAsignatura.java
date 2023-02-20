@@ -23,7 +23,7 @@ public class PruebaAsignatura {
 		System.out.println("Horario");
 		asignatura1.hora = scanner.nextLine();
 		
-		// Mostrando información del libro
+		// Mostrando información de la Asignatura
 		System.out.println("\n==================================");
 		System.out.println("LOS DATOS DE LA ASIGNATURA AGREGADA SON");
 		System.out.println("Nombre:\t\t" + asignatura1.nombre);

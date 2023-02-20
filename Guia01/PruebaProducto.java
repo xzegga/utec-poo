@@ -36,7 +36,7 @@ public class PruebaProducto {
                 precio = scanner.nextDouble();
                 producto1.setPrecio(precio);
 
-                // Mostrando información del libro
+                // Mostrando información del producto
                 System.out.println("\n==================================");
                 System.out.println("LOS DATOS DE LA PRODUCTO AGREGADO SON");
                 System.out.println("Código:\t\t" + producto1.getCodigo());
