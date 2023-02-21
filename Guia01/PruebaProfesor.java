@@ -9,12 +9,14 @@ public class PruebaProfesor {
 		// Definición de objeto Producto
                 Profesor profesor1 = new Profesor();
 
+		// Mostrando valores por defecto;
+		profesor1.mostrarValores();
+
 		// Definición de objeto scanner;
                 Scanner scanner = new Scanner(System.in);
 
 		// Lectura de datos
-                System.out.println("\nINGRESO DE NUEVO PROFESOR");
-                System.out.println("SOLICITUD DE DATOS \n");
+                System.out.println("\nINGRESE LOS NUEVOS DATOS:");
                 
                 System.out.println("Nombre del Profesor:");
                 nombre = scanner.nextLine();
@@ -38,13 +40,13 @@ public class PruebaProfesor {
                 profesor1.setEscalafon(escalafon);
 
                 // Mostrando información del producto
-                System.out.println("\n==================================");
-                System.out.println("LOS DATOS DE LA PRODUCTO AGREGADO SON");
+                System.out.println("\n======================================");
+                System.out.println("LOS DATOS DEL PROFESOR AGREGADO SON");
                 System.out.println("Nombre:\t\t" + profesor1.getNombre());
                 System.out.println("Apellidos:\t" + profesor1.getApellidos());
                 System.out.println("Edad:\t\t" + profesor1.getEdad());
                 System.out.println("Carrera:\t" + profesor1.getCarrera());
-                System.out.println("Escalafón:\t" + "$" +  profesor1.getEscalafon());
+                System.out.println("Escalafón:\t" +  profesor1.getEscalafon());
         }
 }
 

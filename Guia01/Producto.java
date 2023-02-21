@@ -6,6 +6,13 @@ public class Producto {
 	private String categoria;
 	private double precio;
 
+	public Producto() {
+		this.codigo = "Sin definir";
+		this.nombre = "Sin definir";
+		this.descripcion = "Sin definir";
+		this.categoria = "Sin definir";
+		this.precio = 0.00;
+	}
 	
         // Getter y Setters para nombre
         public String getNombre() {
@@ -51,4 +58,15 @@ public class Producto {
 	public void setCategoria(String categoria) {
 		this.categoria = categoria;
 	}
+
+        public void mostrarValores(){
+                System.out.println("\n");
+                System.out.println("\n=============================================");
+                System.out.println("SE ASIGNARON LOS SIGUIENTES DATOS POR DEFECTO:");
+                System.out.println("Código:\t\t" + this.codigo);
+                System.out.println("Nombre:\t\t" + this.nombre);
+                System.out.println("Descripción:\t" + this.descripcion);
+                System.out.println("Precio:\t\t" + this.precio);
+                System.out.println("Categoría:\t" + this.categoria);
+        }
 }

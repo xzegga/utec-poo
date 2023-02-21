@@ -9,6 +9,9 @@ public class PruebaProducto {
 		// Definición de objeto Producto
                 Producto producto1 = new Producto();
 
+		// Mostrando valores por defecto
+		producto1.mostrarValores();
+
 		// Definición de objeto scanner;
                 Scanner scanner = new Scanner(System.in);
 
@@ -38,7 +41,7 @@ public class PruebaProducto {
 
                 // Mostrando información del producto
                 System.out.println("\n==================================");
-                System.out.println("LOS DATOS DE LA PRODUCTO AGREGADO SON");
+                System.out.println("LOS DATOS DEL PRODUCTO AGREGADO SON");
                 System.out.println("Código:\t\t" + producto1.getCodigo());
                 System.out.println("Nombre:\t\t" + producto1.getNombre());
                 System.out.println("Descripción:\t" + producto1.getDescripcion());

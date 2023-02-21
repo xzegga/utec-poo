@@ -19,6 +19,7 @@ public class PruebaAsignatura {
 
 		System.out.println("Aula donde se impartirá la asignatura:");
 		asignatura1.aula = scanner.nextInt();
+		scanner.nextLine();
 
 		System.out.println("Horario");
 		asignatura1.hora = scanner.nextLine();
